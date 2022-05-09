@@ -1,5 +1,5 @@
 
-var letras_minusculas=['a','b','c','d','e','f','g','h','y','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z', ' '];
+var letras_minusculas=['a','b','c','d','e','f','g','h', 'i','y','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z', ' '];
 
 function validar(texto){
 
