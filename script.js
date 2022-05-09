@@ -38,16 +38,20 @@ function btndsencriptar(){
     
 }
 
-function desencriptar(textoDesencriptado){  
-    let matrizCodigo = [["enter", "e"],["imes","i"],["ai","a"],["ober","o"],["ufat","u"]]
-    textoDesencriptado = textoDesencriptado.toLowerCase();
-
-    for(let i=0; i < matrizCodigo.length; i++){
-        if(textoDesencriptado.includes(matrizCodigo[i][0])){
-            textoDesencriptado = textoDesencriptado.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
+function desencriptar(textoDesencriptado){ 
+    var textovalidodes= validar(mensajeIngresado.value);
+    if(textovalidodes){
+        let matrizCodigo = [["enter", "e"],["imes","i"],["ai","a"],["ober","o"],["ufat","u"]]
+        textoDesencriptado = textoDesencriptado.toLowerCase();
+    
+        for(let i=0; i < matrizCodigo.length; i++){
+            if(textoDesencriptado.includes(matrizCodigo[i][0])){
+                textoDesencriptado = textoDesencriptado.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
+            }
         }
-    }
-    return textoDesencriptado;
+        return textoDesencriptado;
+    } 
+        return null;
 }
 
 
